@@ -56,3 +56,7 @@ d = collections.Counter(wordcount)
 #print(d.most_common(10))
 for word, count in d.most_common(10):
 	print(word, ": ", count)
+
+with open('results.txt', 'w') as f:
+  
+  f.write(str(d.most_common(10)))
